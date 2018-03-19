@@ -1,0 +1,45 @@
+{
+    "name": "phaser3-typescript-template",
+    "version": "0.0.1",
+    "description": "A Phaser 3 project template with Typescript support",
+    "main": "src/index.ts",
+    "scripts": {
+        "type-check": "tsc",
+        "bundle": "webpack",
+        "build": "webpack",
+        "start": "npm run build && webpack-serve --port=8000 --open",
+        "production": "webpack --config=webpack.prod.config.js"
+    },
+    "repository": {
+        "type": "git",
+        "url":
+            "git+https://github.com/stephenpoole/phaser3-typescript-template.git"
+    },
+    "author": "Stephen Poole <me@poole.fyi>",
+    "license": "MIT",
+    "licenseUrl": "http://www.opensource.org/licenses/mit-license.php",
+    "bugs": {
+        "url":
+            "https://github.com/stephenpoole/phaser3-typescript-template/issues"
+    },
+    "homepage":
+        "https://github.com/stephenpoole/phaser3-typescript-template#readme",
+    "devDependencies": {
+        "@babel/cli": "^7.0.0-beta.32",
+        "@babel/core": "^7.0.0-beta.32",
+        "@babel/plugin-proposal-class-properties": "^7.0.0-beta.32",
+        "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.32",
+        "@babel/preset-env": "^7.0.0-beta.32",
+        "@babel/preset-typescript": "^7.0.0-beta.32",
+        "babel-loader": "^8.0.0-beta.0",
+        "raw-loader": "^0.5.1",
+        "typescript": "~2.7.1",
+        "uglifyjs-webpack-plugin": "^1.2.4",
+        "webpack": "^4.1.1",
+        "webpack-cli": "^2.0.12",
+        "webpack-serve": "^0.2.0"
+    },
+    "dependencies": {
+        "phaser": "^3.2.0"
+    }
+}
