@@ -6,7 +6,8 @@ module.exports = {
     mode: 'development',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'app.bundle.js'
+        filename: 'app.bundle.js',
+        publicPath: '/dist'
     },
 
     resolve: {
@@ -31,6 +32,7 @@ module.exports = {
         new webpack.DefinePlugin({
             CANVAS_RENDERER: JSON.stringify(true),
             WEBGL_RENDERER: JSON.stringify(true)
-        })
+        }),
+        new webpack.NamedModulesPlugin()
     ]
 };
